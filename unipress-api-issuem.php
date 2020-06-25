@@ -11,7 +11,7 @@ Plugin Name: UniPress API Add-on for IssueM
 Plugin URI: http://getunipress.com/
 Description: A premium WordPress plugin by UniPress.
 Author: UniPress Development Team
-Version: 1.0.0
+Version: 1.0.1
 Author URI: http://zeen101.com/
 Tags:
 */
@@ -22,7 +22,7 @@ if ( !defined( 'ZEEN101_STORE_URL' ) )
 	
 define( 'UPAPI_ISSUEM_NAME', 	'UniPress API Add-on for IssueM' );
 define( 'UPAPI_ISSUEM_SLUG', 	'unipress-api-issuem' );
-define( 'UPAPI_ISSUEM_VERSION', 	'1.0.0' );
+define( 'UPAPI_ISSUEM_VERSION', 	'1.0.1' );
 define( 'UPAPI_ISSUEM_DB_VERSION', '1.0.0' );
 define( 'UPAPI_ISSUEM_URL', 		plugin_dir_url( __FILE__ ) );
 define( 'UPAPI_ISSUEM_PATH', 	plugin_dir_path( __FILE__ ) );
