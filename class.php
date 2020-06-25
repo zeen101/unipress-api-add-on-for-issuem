@@ -189,6 +189,17 @@ if ( ! class_exists( 'UniPress_API_for_IssueM' ) ) {
 					} else {
 						$issue->cover_image = false;
 					}
+					
+					if ( !empty( $meta['pdf_version'] ) || !empty( $meta['external_pdf_link'] ) ) {
+						$pdf_url = empty( $meta['external_pdf_link'] ) ? wp_get_attachment_url( $meta['pdf_version'] ) : $meta['external_pdf_link'];
+						if ( !empty( $pdf_url ) ) {
+							$issue->pdf = $pdf_url;
+						} else {
+							$issue->pdf = false;
+						}
+					} else {
+						$issue->pdf = false;
+					}
 					$response = array(
 						'http_code' => 200,
 						'body' 		=> $issue,
